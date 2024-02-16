@@ -1,32 +1,18 @@
 % !TeX root = main.tex
 \documentclass[11pt, a4paper, ngerman, oneside, openany]{report}
 
-% include all packages and define commands in header.tex
-\input{header/header}
+\input{style/header}
 
 \begin{document}
-	\pagestyle{empty} 
- 
+	\pagestyle{empty}
+
 	\input{tex/title}
 
 	\pagestyle{plain}
-      
-    \input{tex/erklaerung}
-
+    
 	\pagenumbering{arabic}
     \setcounter{page}{1}
 
-    \input{tex/abstract}
-
-    \tableofcontents
-	\listoffigures
-	\listoftables
-	\listofalgorithms
-
-	\input{tex/introduction}
 	\input{tex/mainpart}
-	\input{tex/conclusion}
-
-    \printbibliography
 
 \end{document}
